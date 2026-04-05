@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terms of Use — Your Butler</title>
+  <meta name="description" content="Terms of Use for Your Butler — yourbutler.app inc."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --amber: #EF9F27; --amber-light: #FFF3DC; --amber-deep: #C47D0A;
+      --dark: #1A1208; --mid: #3D3018; --gray: #7A6E62;
+      --light: #FEFAF4; --white: #FFFFFF; --border: rgba(239,159,39,0.15);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--light); color: var(--dark); overflow-x: hidden; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 16px 60px; background: rgba(254,250,244,0.94); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-logo-icon { width: 32px; height: 32px; flex-shrink: 0; }
+    .nav-logo-text { font-family: 'Lobster', cursive; font-size: 22px; color: var(--amber); letter-spacing: -0.3px; }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a { font-size: 14px; font-weight: 500; color: var(--mid); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--amber); }
+    .nav-right { display: flex; gap: 12px; align-items: center; }
+    .nav-link-plain { font-size: 14px; font-weight: 500; color: var(--mid); text-decoration: none; }
+    .nav-link-plain:hover { color: var(--amber); }
+    .nav-cta { background: var(--amber); color: white; padding: 9px 20px; border-radius: 100px; font-size: 14px; font-weight: 600; text-decoration: none; box-shadow: 0 2px 12px rgba(239,159,39,0.3); }
+    .nav-cta:hover { background: var(--amber-deep); }
+    .page-wrap { max-width: 760px; margin: 0 auto; padding: 140px 40px 96px; }
+    .page-tag { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--amber); margin-bottom: 12px; }
+    .page-title { font-family: 'DM Serif Display', serif; font-size: clamp(32px, 5vw, 52px); line-height: 1.1; letter-spacing: -1px; color: var(--dark); margin-bottom: 8px; }
+    .page-title em { font-style: italic; color: var(--amber); }
+    .page-meta { font-size: 14px; color: var(--gray); margin-bottom: 56px; padding-bottom: 32px; border-bottom: 1px solid var(--border); }
+    .legal h2 { font-family: 'DM Serif Display', serif; font-size: 22px; color: var(--dark); margin: 48px 0 14px; letter-spacing: -0.3px; }
+    .legal h3 { font-size: 16px; font-weight: 600; color: var(--mid); margin: 28px 0 10px; }
+    .legal p { font-size: 16px; color: var(--gray); line-height: 1.75; margin-bottom: 16px; font-weight: 300; }
+    .legal ul { margin: 0 0 16px 0; padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .legal ul li { font-size: 16px; color: var(--gray); line-height: 1.7; font-weight: 300; display: flex; gap: 10px; align-items: flex-start; }
+    .legal ul li::before { content: '—'; color: var(--amber); flex-shrink: 0; font-weight: 500; margin-top: 1px; }
+    .legal a { color: var(--amber-deep); text-decoration: underline; text-underline-offset: 3px; }
+    .legal a:hover { color: var(--amber); }
+    .highlight-box { background: var(--amber-light); border-left: 3px solid var(--amber); border-radius: 0 12px 12px 0; padding: 16px 20px; margin: 24px 0; }
+    .highlight-box p { margin-bottom: 0; font-size: 15px; }
+    .toc { background: white; border: 1px solid var(--border); border-radius: 16px; padding: 28px 32px; margin-bottom: 48px; }
+    .toc h3 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--amber); margin-bottom: 16px; }
+    .toc ol { padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+    .toc ol li { font-size: 14px; color: var(--gray); font-weight: 400; }
+    .toc ol li a { color: var(--mid); text-decoration: none; transition: color 0.2s; }
+    .toc ol li a:hover { color: var(--amber); }
+    footer { background: #110D06; padding: 56px 80px 28px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.07); margin-bottom: 28px; }
+    .footer-logo { font-family: 'Lobster', cursive; font-size: 22px; color: var(--amber); display: block; margin-bottom: 12px; text-decoration: none; }
+    .footer-tagline { font-size: 13px; color: rgba(255,255,255,0.3); line-height: 1.65; max-width: 240px; }
+    .footer-col h4 { font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.35); margin-bottom: 16px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    .footer-col a { font-size: 13px; color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s; }
+    .footer-col a:hover { color: var(--amber); }
+    .footer-bottom { display: flex; justify-content: space-between; align-items: center; }
+    .footer-copy { font-size: 12px; color: rgba(255,255,255,0.2); }
+    .footer-legal { display: flex; gap: 20px; }
+    .footer-legal a { font-size: 12px; color: rgba(255,255,255,0.2); text-decoration: none; }
+    .footer-legal a:hover { color: rgba(255,255,255,0.45); }
+    @media (max-width: 768px) {
+      nav { padding: 14px 20px; }
+      .nav-links { display: none; }
+      .page-wrap { padding: 100px 20px 64px; }
+      footer { padding: 48px 20px 24px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+      .footer-bottom { flex-direction: column; gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <svg class="nav-logo-icon" viewBox="0 0 1500 1500" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="750" cy="750" r="750" fill="#EF9F27"/>
+      <path fill-rule="evenodd" fill="#ffffff" d="m242.5 286.45l57.6-33.9 98.82 369.12 444.67 54.06 405.23-291.57 26.8 190.31-19.05 5.54-25.48-143.35-321.92 242.61 381.96 19.72-33.01 15.95-399.69-0.88-635.43 476.35 2.44-39.22 166.83-157.08zm173.26 411.65l338.54 17.51-282.04 212.25z"/>
+    </svg>
+    <span class="nav-logo-text">yourbutler.app</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html#how-it-works">How it works</a></li>
+    <li><a href="features.html">Features</a></li>
+    <li><a href="business.html">For businesses</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="business.html" class="nav-link-plain">Partner with us</a>
+    <a href="index.html#early-access" class="nav-cta">Get early access</a>
+  </div>
+</nav>
+
+<div class="page-wrap">
+  <div class="page-tag">Legal</div>
+  <h1 class="page-title">Terms of <em>Use</em></h1>
+  <p class="page-meta">
+    Effective Date: April 4, 2026 &nbsp;·&nbsp; Last Updated: April 4, 2026<br/>
+    yourbutler.app inc. &nbsp;·&nbsp; <a href="mailto:info@yourbutler.app">info@yourbutler.app</a>
+  </p>
+
+  <div class="toc">
+    <h3>Contents</h3>
+    <ol>
+      <li><a href="#t1">Eligibility</a></li>
+      <li><a href="#t2">Changes to These Terms</a></li>
+      <li><a href="#t3">About Butler</a></li>
+      <li><a href="#t4">No Medical, Legal, or Financial Advice</a></li>
+      <li><a href="#t5">Privacy</a></li>
+      <li><a href="#t6">Account Registration and Security</a></li>
+      <li><a href="#t7">Household Accounts, Invitations, and Roles</a></li>
+      <li><a href="#t8">Limited License</a></li>
+      <li><a href="#t9">App Store and Platform Terms</a></li>
+      <li><a href="#t10">Subscriptions, Billing, and Paid Features</a></li>
+      <li><a href="#t11">Deal Information, Pricing, and Retailer Content</a></li>
+      <li><a href="#t12">Butler Pulse and Predictions</a></li>
+      <li><a href="#t13">Butler Points and Rewards</a></li>
+      <li><a href="#t14">Butler for Good</a></li>
+      <li><a href="#t15">Optional Health and Caregiver Features</a></li>
+      <li><a href="#t16">Acceptable Use</a></li>
+      <li><a href="#t17">User Content and Data You Submit</a></li>
+      <li><a href="#t18">Feedback</a></li>
+      <li><a href="#t19">Intellectual Property</a></li>
+      <li><a href="#t20">Third-Party Services and Content</a></li>
+      <li><a href="#t21">Service Availability and Changes</a></li>
+      <li><a href="#t22">Termination or Suspension</a></li>
+      <li><a href="#t23">Disclaimers</a></li>
+      <li><a href="#t24">Limitation of Liability</a></li>
+      <li><a href="#t25">Indemnity</a></li>
+      <li><a href="#t26">Governing Law and Jurisdiction</a></li>
+      <li><a href="#t27">Export and Sanctions Compliance</a></li>
+      <li><a href="#t28">Notices</a></li>
+      <li><a href="#t29">General Terms</a></li>
+      <li><a href="#t30">Contact</a></li>
+    </ol>
+  </div>
+
+  <div class="legal">
+
+    <p>These Terms of Use ("Terms") form a legally binding agreement between you and yourbutler.app inc. ("Butler," "we," "us," or "our") governing your access to and use of the Butler mobile application, the Butler website, any affiliated websites, dashboards, portals, or tools, and any related services, content, and features we make available (collectively, the "Service"). By accessing or using the Service, you agree to be bound by these Terms. If you do not agree, do not use the Service.</p>
+
+    <h2 id="t1">1. Eligibility</h2>
+    <p>You may use the Service only if you are legally capable of entering into a binding agreement in your jurisdiction and you comply with these Terms and all applicable laws.</p>
+    <p>If you are under the age of majority in your jurisdiction, you may use the Service only with the involvement and consent of a parent or legal guardian. The Service is intended to be managed by adults. If household profiles for children or dependants are created, they must be created and managed by a parent, guardian, or authorized adult.</p>
+    <div class="highlight-box">
+      <p>The Service is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided us with personal information, please contact us at info@yourbutler.app and we will delete it.</p>
+    </div>
+
+    <h2 id="t2">2. Changes to These Terms</h2>
+    <p>We may update these Terms from time to time. If we make material changes, we will take reasonable steps to notify you, such as by updating the date above, posting notice in the Service, or otherwise notifying you. Your continued use of the Service after updated Terms take effect means you accept the revised Terms.</p>
+
+    <h2 id="t3">3. About Butler</h2>
+    <p>Butler is a consumer app designed to help households organize recurring needs, shopping lists, restocking, reminders, deal discovery, household coordination, and related features. Depending on the features you use, Butler may include shared household lists, household reminders and tasks, Butler Pulse predictive restocking, Butler Price Match or related deal-matching features, optional shopping-run and purchase confirmation features, Butler Points gamification and rewards, optional health-related logistics such as refill reminders or appointment tracking, optional caregiver or multi-household access, and optional links to third-party retailers, partners, or merchants.</p>
+
+    <h2 id="t4">4. No Medical, Legal, or Financial Advice</h2>
+    <div class="highlight-box">
+      <p>Butler is not a doctor, pharmacist, healthcare provider, insurer, emergency service, lawyer, or financial advisor. Nothing in the Service is medical advice, diagnosis, treatment, legal advice, investment advice, or financial advice. Any health-related features are provided for organizational and reminder purposes only. In an emergency, do not rely on the Service. Contact appropriate emergency services or a qualified professional.</p>
+    </div>
+    <p>You are solely responsible for decisions about medications, treatment, appointments, and healthcare, shopping choices, retailer selection, and purchases, and verifying product availability, pricing, ingredient, allergy, dosage, and safety information before acting.</p>
+
+    <h2 id="t5">5. Privacy</h2>
+    <p>Your use of the Service is also governed by our <a href="privacy.html">Privacy Policy</a>, which describes how we collect, use, disclose, and protect your information. By using the Service, you acknowledge that you have read the Privacy Policy.</p>
+
+    <h2 id="t6">6. Account Registration and Security</h2>
+    <p>To use certain features, you may need to create an account. You agree to provide accurate, current, and complete information, keep your login credentials secure, promptly update your information if it changes, and notify us if you suspect unauthorized access to your account. You are responsible for all activity that occurs under your account, except to the extent caused by our failure to use reasonable security measures.</p>
+
+    <h2 id="t7">7. Household Accounts, Invitations, and Roles</h2>
+    <p>Butler may allow you to create or join a shared household and invite other users. If you create, manage, or join a household, you understand and agree that certain household information may be visible to other authorized household members, household admins may be able to add, remove, assign, or manage members and certain household records, roles and permissions may affect what a member can see or do, and information entered into a shared household may remain associated with that household unless deleted or removed in accordance with the Service's features.</p>
+    <p>You must not add another person to a household or caregiver workflow unless you are authorized to do so.</p>
+    <div class="highlight-box">
+      <p>If you add another person to a caregiver workflow, you represent that you have obtained all necessary consents from that person, including consent to receive reminders, share health-related logistics entries, and be monitored through the Service's caregiver features.</p>
+    </div>
+
+    <h2 id="t8">8. Limited License</h2>
+    <p>Subject to these Terms, we grant you a limited, revocable, non-exclusive, non-transferable, non-sublicensable license to access and use the Service for your personal, non-commercial use. This license does not transfer any ownership rights to you. If you violate these Terms, this license may be suspended or terminated.</p>
+
+    <h2 id="t9">9. App Store and Platform Terms</h2>
+    <p>If you download or use Butler through Apple's App Store, Google Play, or another app platform, your use of the Service may also be subject to that platform's terms, policies, and usage rules. If there is a conflict between these Terms and mandatory platform terms, the platform's mandatory terms will control to the extent of the conflict.</p>
+
+    <h2 id="t10">10. Subscriptions, Billing, and Paid Features</h2>
+    <p>Some parts of the Service may be free, and some may require payment, subscription, or in-app purchase. If you purchase a subscription or paid feature, you authorize the applicable app store or payment provider to charge you, fees and billing periods will be disclosed at the time of purchase, subscriptions may auto-renew unless cancelled, and cancellations generally take effect at the end of the current billing period.</p>
+    <div class="highlight-box">
+      <p>Subscriptions purchased through Apple App Store are managed by Apple and subject to Apple's refund policies. Subscriptions purchased through Google Play are managed by Google and subject to Google's refund policies. To request a refund, contact the applicable app store directly. Unless required by law, payments are non-refundable once charged.</p>
+    </div>
+    <p>We may change pricing, features, or plans from time to time, but we will not retroactively change the price of your current billing period without notice where required.</p>
+
+    <h2 id="t11">11. Deal Information, Pricing, and Retailer Content</h2>
+    <p>Butler may display deal information, store information, prices, savings estimates, product descriptions, retailer links, shopping suggestions, and other commerce-related information. You acknowledge and agree that retailers may change prices, stock, terms, and availability at any time, Butler does not guarantee that any deal, price, coupon, offer, or product will be available, valid, current, or honored, savings calculations may be estimated and may not reflect taxes, fees, regional variations, or retailer-specific rules, product images and descriptions may differ from actual store listings, and you are responsible for verifying final details directly with the retailer before purchasing.</p>
+    <p>If Butler includes affiliate links or shopping partners, we may earn a commission from qualifying interactions or purchases.</p>
+
+    <h2 id="t12">12. Butler Pulse and Predictions</h2>
+    <p>Butler Pulse and similar features may provide predicted restocking windows, recurring item suggestions, reminders, confidence labels, and other household insights. These outputs are estimates only — based on limited inputs, user activity, household patterns, and other assumptions — and they may be inaccurate or incomplete. You remain responsible for verifying actual household needs, purchase timing, critical supplies, and any health-related or safety-sensitive decisions.</p>
+
+    <h2 id="t13">13. Butler Points and Rewards</h2>
+    <div class="highlight-box">
+      <p>Butler Points are a loyalty feature within the Service. Points have no monetary value, are not redeemable for cash, are non-transferable, and may not be sold, gifted, or combined across accounts. We reserve the right to modify, suspend, or discontinue Butler Points, scratch cards, reward thresholds, or any rewards program at any time without notice or compensation. Points and rewards may expire or be forfeited if your account is suspended, terminated, or inactive for an extended period.</p>
+    </div>
+
+    <h2 id="t14">14. Butler for Good</h2>
+    <p>Butler may offer users the option to donate points or scratch card values to charitable causes ("Butler for Good"). Donated points have no guaranteed monetary value and are subject to pool availability, monthly caps, and program terms. Butler for Good contributions are made at Butler's discretion from a portion of revenue. We do not guarantee specific donation amounts, charitable recipients, or tax receipts in connection with Butler for Good participation. This feature may be modified or discontinued at any time.</p>
+
+    <h2 id="t15">15. Optional Health and Caregiver Features</h2>
+    <p>If you use optional health-related or caregiver features, you agree that those features are for organization and reminders only, Butler is not responsible for missed doses, missed refills, missed appointments, care decisions, or medical outcomes, you will independently verify any health-related information before acting, and you will only add, share, or manage another person's information if you are authorized to do so.</p>
+    <p>You are solely responsible for maintaining independent records of any health-related information you enter into the Service. We may remove or modify health-related or caregiver features at any time.</p>
+
+    <h2 id="t16">16. Acceptable Use</h2>
+    <p>You agree not to use the Service to violate any law or regulation, infringe another person's rights, upload false, misleading, fraudulent, or defamatory content, impersonate another person or misrepresent your authority, interfere with the security or integrity of the Service, access another user's account or household without authorization, scrape or mass-download data from the Service except where expressly permitted, reverse engineer or decompile the Service except where prohibited by law from restricting that activity, use the Service to build or train a competing product or dataset without our written permission, upload malware or harmful code, circumvent rate limits or access controls, submit false or misleading deal prices, store information, or verification data through community submission features, or use the Service for commercial resale without our written permission.</p>
+
+    <h2 id="t17">17. User Content and Data You Submit</h2>
+    <p>You may submit or create content through the Service, including lists, notes, reminders, receipts, photos, household records, feedback, and other materials ("User Content"). You retain ownership of your User Content, but you grant us a worldwide, non-exclusive, royalty-free license to host, store, reproduce, process, adapt, transmit, and display that User Content solely as needed to operate the Service, provide features you request, improve functionality, maintain security, and comply with law.</p>
+    <p>You represent and warrant that you have the rights needed to submit the User Content, your User Content does not violate law or third-party rights, your User Content is not misleading in a way that could reasonably cause harm, and by submitting deal prices, store information, or other community content, the information is accurate to the best of your knowledge.</p>
+
+    <h2 id="t18">18. Feedback</h2>
+    <p>If you provide ideas, suggestions, or feedback about Butler ("Feedback"), you grant us a worldwide, perpetual, irrevocable, transferable, sublicensable, royalty-free right to use, modify, commercialize, and otherwise exploit that Feedback without restriction or compensation to you. Do not send us confidential or proprietary feedback if you do not want us to use it in this way.</p>
+
+    <h2 id="t19">19. Intellectual Property</h2>
+    <p>The Service, including its software, features, branding, trademarks, logos, design, structure, text, graphics, and other content, is owned by or licensed to yourbutler.app inc. and is protected by intellectual property and other laws. Except for the limited license expressly granted in these Terms, no rights are granted to you by implication or otherwise. You may not use our name, branding, trademarks, or logos without our prior written permission.</p>
+
+    <h2 id="t20">20. Third-Party Services and Content</h2>
+    <p>The Service may contain or integrate with third-party websites, retailers, pharmacies, merchants, payment processors, mapping tools, analytics providers, authentication providers, operating systems, and app stores. We do not control those third parties and are not responsible for their content, availability, pricing, policies, or actions. Your use of third-party services is governed by their own terms and privacy policies.</p>
+
+    <h2 id="t21">21. Service Availability and Changes</h2>
+    <p>We may modify, suspend, discontinue, or restrict all or part of the Service at any time, with or without notice, subject to applicable law. We do not guarantee that the Service will always be available, uninterrupted, secure, or error-free, or that all features will continue to be offered.</p>
+
+    <h2 id="t22">22. Termination or Suspension</h2>
+    <p>You may stop using the Service at any time. We may suspend or terminate your access to the Service if you violate these Terms, create risk or possible legal exposure for us or others, your use appears fraudulent, abusive, or unauthorized, we are required to do so by law, or we discontinue the Service. Upon termination, your right to use the Service ends immediately, but provisions that by their nature should survive will survive.</p>
+
+    <h2 id="t23">23. Disclaimers</h2>
+    <p>To the maximum extent permitted by law, the Service is provided on an "as is" and "as available" basis. We disclaim all warranties, representations, and conditions, express, implied, or statutory, including implied warranties or conditions of merchantability, fitness for a particular purpose, title, non-infringement, availability, accuracy, and quiet enjoyment. Some jurisdictions do not allow certain disclaimers, so parts of this section may not apply to you.</p>
+
+    <h2 id="t24">24. Limitation of Liability</h2>
+    <p>To the maximum extent permitted by law, yourbutler.app inc. and its affiliates, officers, directors, employees, contractors, licensors, and service providers will not be liable for any indirect, incidental, special, consequential, exemplary, or punitive damages, or for any loss of profits, revenues, goodwill, data, use, or business opportunity arising out of or related to the Service.</p>
+    <p>To the maximum extent permitted by law, our total liability for all claims arising out of or relating to the Service or these Terms will not exceed the greater of the amount you paid us for the Service in the 12 months before the event giving rise to the claim, or CAD $100. Nothing in these Terms excludes or limits liability that cannot be excluded or limited under applicable law.</p>
+
+    <h2 id="t25">25. Indemnity</h2>
+    <p>To the maximum extent permitted by law, you agree to indemnify and hold harmless yourbutler.app inc., its affiliates, officers, directors, employees, contractors, licensors, and service providers from and against claims, losses, liabilities, damages, judgments, costs, and expenses, including reasonable legal fees, arising out of or relating to your misuse of the Service, your violation of these Terms, your User Content, your violation of another person's rights, or your unauthorized use of another person's information in a household or caregiver context.</p>
+
+    <h2 id="t26">26. Governing Law and Jurisdiction</h2>
+    <p>These Terms and any dispute arising from them or the Service are governed by the laws of the Province of Ontario and the federal laws of Canada applicable there, without regard to conflict-of-laws rules. You and Butler agree that, except where prohibited by law, the courts located in Ontario, Canada will have exclusive jurisdiction over disputes arising from these Terms or the Service. If you are a consumer residing in a jurisdiction with mandatory rights or forum protections, nothing in this section overrides those rights where they apply.</p>
+
+    <h2 id="t27">27. Export and Sanctions Compliance</h2>
+    <p>You represent that you are not located in, ordinarily resident in, or using the Service from a country or region subject to applicable trade restrictions that would prohibit your use of the Service, and that you are not on any applicable sanctions or restricted-party list. You agree not to use the Service in violation of export control, sanctions, or trade laws.</p>
+
+    <h2 id="t28">28. Notices</h2>
+    <p>We may provide notices to you by email, in-app message, website posting, push notification, or another reasonable method. You may send legal or account-related notices to us at <a href="mailto:info@yourbutler.app">info@yourbutler.app</a>.</p>
+
+    <h2 id="t29">29. General Terms</h2>
+    <p>These Terms, together with any documents expressly incorporated by reference, form the entire agreement between you and yourbutler.app inc. regarding the Service. If any provision is found unenforceable, the remaining provisions will remain in effect. Our failure to enforce a provision is not a waiver. You may not assign or transfer these Terms without our prior written consent. We may assign these Terms in connection with a merger, acquisition, reorganization, or sale of assets.</p>
+
+    <h2 id="t30">30. Contact</h2>
+    <p>If you have questions about these Terms, contact:</p>
+    <ul>
+      <li>yourbutler.app inc.</li>
+      <li>Email: <a href="mailto:info@yourbutler.app">info@yourbutler.app</a></li>
+      <li>Website: <a href="https://yourbutler.app/terms">yourbutler.app/terms</a></li>
+    </ul>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <a href="index.html" class="footer-logo">yourbutler.app</a>
+      <p class="footer-tagline">Save money. Never run out. The household savings engine built for Canadian families.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="index.html#how-it-works">How it works</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="index.html#early-access">Get early access</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>For businesses</h4>
+      <ul>
+        <li><a href="business.html#grocers">Independent grocers</a></li>
+        <li><a href="business.html#pharmacies">Pharmacies</a></li>
+        <li><a href="business.html#hospitality">Restaurants &amp; breweries</a></li>
+        <li><a href="business.html#seasonal">Seasonal outlets</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="mailto:hello@yourbutler.app">hello@yourbutler.app</a></li>
+        <li><a href="mailto:partners@yourbutler.app">partners@yourbutler.app</a></li>
+        <li><a href="privacy.html">Privacy policy</a></li>
+        <li><a href="terms.html">Terms of use</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2026 yourbutler.app inc. All rights reserved.</p>
+    <div class="footer-legal">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
